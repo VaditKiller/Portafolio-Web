@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 250" width="100%" height="100%" role="img" aria-label="Racimo de rosas detalladas">
+  <defs>
+    <radialGradient id="c-shadow" cx="50%" cy="80%" r="90%">
+      <stop offset="0%" stop-color="#1a0000"/>
+      <stop offset="50%" stop-color="#800000"/>
+      <stop offset="100%" stop-color="#d90000"/>
+    </radialGradient>
+    <linearGradient id="c-light" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#4d0000"/>
+      <stop offset="60%" stop-color="#cc0000"/>
+      <stop offset="100%" stop-color="#ff1a33"/>
+    </linearGradient>
+    <linearGradient id="c-leaf" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a290a"/>
+      <stop offset="100%" stop-color="#145214"/>
+    </linearGradient>
+
+    <g id="leaf-shape">
+      <path d="M0,0 C25,-20 50,0 60,25 C35,45 10,25 0,0 Z" fill="url(#c-leaf)"/>
+    </g>
+
+    <g id="detailed-rose">
+      <path d="M-15,0 C-60,-15 -75,-60 -35,-85 C-5,-100 30,-75 10,-35 Z" fill="url(#c-shadow)" stroke="#ff4d66" stroke-width="1.2"/>
+      <path d="M15,0 C60,-15 75,-60 35,-85 C5,-100 -30,-75 -10,-35 Z" fill="url(#c-shadow)" stroke="#ff4d66" stroke-width="1.2"/>
+      <path d="M-20,15 C-85,25 -90,-25 -60,-55 C-35,-75 0,-45 -5,-15 Z" fill="url(#c-shadow)" stroke="#ff4d66" stroke-width="1.2"/>
+      <path d="M20,15 C85,25 90,-25 60,-55 C35,-75 0,-45 5,-15 Z" fill="url(#c-shadow)" stroke="#ff4d66" stroke-width="1.2"/>
+      <path d="M-45,0 C-60,45 -20,75 0,75 C20,75 60,45 45,0 C20,20 -20,20 -45,0 Z" fill="url(#c-light)" stroke="#ff8093" stroke-width="1.5"/>
+      <path d="M-5,20 C-50,15 -60,-30 -30,-60 C-5,-80 20,-45 0,-15 Z" fill="url(#c-shadow)" stroke="#ff4d66" stroke-width="1"/>
+      <path d="M5,20 C50,15 60,-30 30,-60 C5,-80 -20,-45 0,-15 Z" fill="url(#c-shadow)" stroke="#ff4d66" stroke-width="1"/>
+      <path d="M-35,-15 C-45,30 0,55 35,-15 C15,5 -15,5 -35,-15 Z" fill="url(#c-light)" stroke="#ff99aa" stroke-width="1.5"/>
+      <path d="M0,10 C-35,10 -45,-30 -15,-55 C15,-75 25,-30 10,-10 Z" fill="url(#c-shadow)" stroke="#ff4d66" stroke-width="0.8"/>
+      <path d="M-5,0 C30,15 45,-25 15,-45 C-15,-65 -25,-20 0,-10 Z" fill="url(#c-light)" stroke="#ff99aa" stroke-width="1"/>
+      <path d="M-10,-10 C-25,-30 0,-55 20,-30 C35,-10 5,15 -5,-10 C-15,-25 5,-30 5,-20 Z" fill="url(#c-shadow)" stroke="#ff6677" stroke-width="1"/>
+      <path d="M-5,-20 C10,-30 25,-10 5,0 C-10,5 -20,-10 -5,-20 Z" fill="url(#c-light)" stroke="#ffccd5" stroke-width="1"/>
+    </g>
+  </defs>
+
+  <use href="#leaf-shape" x="175" y="140" transform="rotate(45 175 140)"/>
+  <use href="#leaf-shape" x="175" y="140" transform="rotate(135 175 140)"/>
+  <use href="#leaf-shape" x="175" y="140" transform="rotate(225 175 140)"/>
+  <use href="#leaf-shape" x="175" y="140" transform="rotate(315 175 140)"/>
+  
+  <use href="#leaf-shape" x="90" y="80" transform="rotate(170 90 80) scale(0.8)"/>
+  <use href="#leaf-shape" x="260" y="80" transform="rotate(10 260 80) scale(0.8)"/>
+
+  <use href="#detailed-rose" x="95" y="110" transform="rotate(-30 95 110) scale(0.8)"/>
+
+  <use href="#detailed-rose" x="255" y="110" transform="rotate(30 255 110) scale(0.8)"/>
+
+  <use href="#detailed-rose" x="175" y="130" transform="scale(1.15) translate(-22, -15)"/>
+</svg>
